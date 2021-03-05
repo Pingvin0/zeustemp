@@ -7,7 +7,8 @@ def connect_to_mysql():
         host="192.168.0.16",
         user="zeus",
         password="exTs3wDlf9MAgVsT",
-        database="zeus")
+        database="zeus"
+        auth_plugin='mysql_native_password')
 
 
 def on_connect(client, userdata, flags, rc):
